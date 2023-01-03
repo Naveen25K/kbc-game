@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/kbc-game/static/css/main.e0328214.css",
+    "main.js": "/kbc-game/static/js/main.240864b5.js",
+    "static/js/845.d30619d1.chunk.js": "/kbc-game/static/js/845.d30619d1.chunk.js",
+    "static/media/play.mp3": "/kbc-game/static/media/play.8e5f6d1d81d4e1414b95.mp3",
+    "static/media/kbc.jpg": "/kbc-game/static/media/kbc.8a5ca2d10bdca8bacc7d.jpg",
+    "static/media/correct.mp3": "/kbc-game/static/media/correct.160572d72c858155072e.mp3",
+    "static/media/wrong.mp3": "/kbc-game/static/media/wrong.e946821894ae9b0a0d6f.mp3",
+    "index.html": "/kbc-game/index.html",
+    "main.e0328214.css.map": "/kbc-game/static/css/main.e0328214.css.map",
+    "main.240864b5.js.map": "/kbc-game/static/js/main.240864b5.js.map",
+    "845.d30619d1.chunk.js.map": "/kbc-game/static/js/845.d30619d1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0328214.css",
+    "static/js/main.240864b5.js"
+  ]
+}
