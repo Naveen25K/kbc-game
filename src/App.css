@@ -1,0 +1,178 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+user-select: none;
+}
+.App{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+.main{
+display: flex;
+flex-direction: column;
+height: inherit;
+justify-content: space-evenly;
+width: 75%;
+padding: 0 2rem;
+background:linear-gradient(to bottom, rgba(0,0,0,0),#030231), url('../public/assets/kbc.jpg'),no-repeat;
+background-position: center;
+background-size: cover;
+position: relative;
+}
+.question h2{
+  margin-bottom: 2rem;
+  color: white;
+  font-size: 32px;
+  background-color: #04034f;
+  padding: 1.4rem 0.5rem;
+  border-radius: 1rem;
+}
+.timer{
+  border: 4px solid white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.answers{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+  justify-content: center;
+}
+.answer{
+  background-color: #06047b;
+  color:white;
+  border-radius: 1rem;
+  padding: 1rem;
+  border:none;
+  width: 49%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.answer:hover,.answer.active{
+  background: white;
+  color: black;
+  transition: 0.5s all ease;
+}
+
+
+.answer.correct{
+  background-color: green;
+  animation: correct 3s ease forwards;
+}
+@keyframes correct {
+  20%,40%,60%{
+    background-color: #06047b;
+  }10%,30%,50%, 70%{
+    background-color: #0b07cd;
+  }
+}
+.answer.wrong{
+  background-color: crimson;
+  animation: wrong 3s ease forwards;
+}
+@keyframes wrong {
+  20%,40%,60%{
+    background-color: #06047b;
+  }10%,30%,50%, 70%{
+    background-color: #0b07cd;
+  }
+}
+
+.pyramid{
+  background-color: #030231;
+  height: inherit;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pyramid .graph{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.pyramid .graph li{
+  list-style-type: none;
+  margin: 0.5rem 1rem;
+  color: white;
+  display: flex;
+  font-size: 20px;
+  padding: 0 0.5rem;
+}
+.pyramid .graph .number{
+  width: 50%;
+}
+.pyramid .graph li.active{
+  background-color: green;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.WinningAmount{
+  font-size: 32px;
+  display: flex;
+  margin: auto;
+  background-color: #04034f;
+  color:white;
+  border-radius: 1rem;
+  padding: 10px 30px;
+}
+
+.startGame{
+  background-color: #04034f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+  width: 200px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.startGame:hover{
+  background-color: #030231;
+}
+.user h1{
+  margin-bottom: 30px;
+}
+.user p{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+.user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  
+}
+.user input{
+  font-size: 16px;
+  width: 30%;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #030231;
+  color: white;
+  outline: none;
+  text-align: center;
+}
+.user input::placeholder{
+  color: rgb(195, 195, 195);
+}
